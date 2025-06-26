@@ -9,8 +9,9 @@ $bp-desktop-xl: 144rem; // 1440px
 $primary-font: "Space Grotesk", sans-serif;
 
 // Colors
-$black: oklch(20.35% 0.001 276.92);   // #151515
-$mint-green: oklch(82.78% 0.1441 151.12);  // #4EE1A0
-$dark-gray: oklch(29.41% 0.0012 277.05);  // #242424
-$light-gray: oklch(88.76% 0.0017 278.04);  // #D9D9D9
-$white: oklch(100% 0 0);              // #FFFFFF
+$black: oklch(0.1957 0 0); // #151515
+$mint-green: oklch(0.8152 0.1562 160.42); // #4EE1A0
+$dark-gray: oklch(0.2603 0 0); // #242424
+$light-gray: oklch(0.8853 0 0); // #D9D9D9
+$white: oklch(1 0 0); // #FFFFFF
+$red: oklch(0.7141 0.1797 30.11); // #FF6F5B
