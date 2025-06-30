@@ -1,0 +1,15 @@
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
+
+.container {
+    padding-inline: 1.6rem;
+    margin-inline: auto;
+    
+    @include mx.breakpoint(tablet) {
+        padding-inline: 3.2rem;
+    }
+    
+    @include mx.breakpoint(desktop) {
+        padding-inline: 16.5rem;
+    }
+}

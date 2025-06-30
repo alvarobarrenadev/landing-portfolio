@@ -1,16 +1,72 @@
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
+
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     &__nav {
         &--logo {
+            display: flex;
+            width: 40%;
             margin-block: 2rem;
+            margin-inline: auto;
         }
 
         &--icons {
             display: flex;
             justify-content: center;
             gap: 2.5rem;
+        }
+    }
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+        
+        &--img {
+            text-align: center;
+            margin-bottom: 4rem;
+            
+            img {
+                z-index: 1;
+                width: 60%;
+                background: linear-gradient(to bottom, v.$black, v.$dark-gray, transparent);
+            }
+        }
+
+        &--content {
+            text-align: center;
+            
+            &_title {
+                max-width: 90%;
+                font-size: 3.5rem;
+                position: relative;
+                line-height: 1.7lh;
+                margin-inline: auto;
+                margin-bottom: 2.4rem;
+                letter-spacing: -1.136px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    width: 20rem;
+                    height: 0.4rem;
+                    position: absolute;
+                    top: 9rem;
+                    left: 8rem;
+                    background-color: v.$green;
+                }
+            }
+
+            &_description {
+                margin-inline: auto;
+                max-width: 90%;
+                color: v.$light-gray;
+                margin-bottom: 2.4rem;
+            }
         }
     }
 }

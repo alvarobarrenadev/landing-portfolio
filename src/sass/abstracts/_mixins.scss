@@ -25,3 +25,24 @@
     }
   }
 }
+
+@mixin button {
+  display: inline-block;
+  position: relative;
+  color: v.$white;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.286px;
+  font-size: 1.6rem;
+
+  &:after {
+    content: '';
+    width: 12rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 0rem;
+    background-color: v.$green;
+  }
+}
