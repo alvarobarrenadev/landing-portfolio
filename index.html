@@ -36,8 +36,10 @@
   <body>
     <div class="container">
       <header class="header">
+        <div class="header__img">
+          <img src="img/logo.svg" class="header__img--logo" alt="Logo Adam Keyes">
+        </div>
         <nav class="header__nav">
-          <img src="img/logo.svg" class="header__nav--logo" alt="Logo Adam Keyes">
           <div class="header__nav--icons">
             <!-- Github Icon -->
             <a href="#">
@@ -65,19 +67,18 @@
             </a>
           </div>
         </nav>
-
-        <section class="header__hero">
-          <div class="header__hero--img">
-            <img src="img/hero1.png" alt="">
-          </div>
-
-          <section class="header__hero--content">
-            <h1 class="header__hero--content_title">Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
-            <p class="header__hero--content_description">Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
-            <a href="#" class="header__hero--content-btn btn">Contact me</a>
-          </section>
-        </section>
       </header>
+      <section class="hero">
+        <div class="hero__img">
+          <img src="img/hero1.png" alt="">
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__content--title">Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
+          <p class="hero__content--description">Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.</p>
+          <a href="#" class="hero__content--btn btn">Contact me</a>
+        </div>
+      </section>
     </div>
     <script type="module" src="src/js/main.js"></script>
   </body>
