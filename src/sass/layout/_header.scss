@@ -7,6 +7,8 @@
     justify-content: center;
 
     &__nav {
+        margin-bottom: 4.9rem;
+
         &--logo {
             display: flex;
             width: 40%;
@@ -66,6 +68,10 @@
                 max-width: 90%;
                 color: v.$light-gray;
                 margin-bottom: 2.4rem;
+            }
+
+            &-btn {
+                margin-bottom: 9.2rem;
             }
         }
     }

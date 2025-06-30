@@ -5,13 +5,6 @@ $bp-tablet-horizontal: 64rem; // 1024px ÷ 16 = 64rem
 $bp-desktop: 75rem; // 1200px ÷ 16 = 75rem
 $bp-desktop-xl: 90rem; // 1440px ÷ 16 = 90rem
 
-$breakpoints: (
-  tablet: 48em, // 768px ÷ 16px = 48rem
-  tablet-h: 64em, // 1024px
-  desktop: 75em, // 1200px
-  desktop-xl: 90em  // 1440px
-);
-
 // Variables for fonts
 $primary-font: "Space Grotesk", sans-serif;
 
