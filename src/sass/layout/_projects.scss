@@ -4,6 +4,14 @@
 .projects {
     margin-bottom: 9rem;
 
+    @include mx.breakpoint(tablet) {
+        margin-bottom: 11.2rem;
+    }
+    
+    @include mx.breakpoint(desktop) {
+        margin-bottom: 13.9rem;
+    }
+
     &__header {
         display: flex;
         justify-content: space-between;

@@ -35,6 +35,7 @@
   text-transform: uppercase;
   letter-spacing: 2.286px;
   font-size: 1.6rem;
+  transition: color .3s ease;
 
   &:after {
     content: '';
@@ -44,5 +45,9 @@
     bottom: -1rem;
     left: 0rem;
     background-color: v.$green;
+  }
+
+  &:hover {
+    color: v.$green;
   }
 }
