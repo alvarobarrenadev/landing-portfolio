@@ -49,3 +49,31 @@ body {
         }
     }
 }
+
+html {
+    position: relative;
+    
+    &::before {
+        content: '';
+        background-image: url("/img/oval-icon.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 140rem;
+        left: 20rem;
+        opacity: 70%;
+
+        @include mx.breakpoint(tablet) {
+            top: 95.5rem;
+            left: 55rem;
+            width: 29%;
+        }
+
+        @include mx.breakpoint(desktop) {
+            top: 95rem;
+            left: 96rem;
+            width: 20%;
+        }
+    }
+}
