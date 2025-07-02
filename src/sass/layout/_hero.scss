@@ -16,7 +16,15 @@
 
         @include mx.breakpoint(tablet) {
             text-align: right;
-            max-width: 50%;
+            max-width: 40%;
+        }
+
+        @include mx.breakpoint(desktop) {
+            max-width: 40%;
+        }
+
+        @include mx.breakpoint(desktopxl) {
+            max-width: 40%;
         }
         
         img {
@@ -36,7 +44,19 @@
         @include mx.breakpoint(tablet) {
             margin-top: 5rem;
             text-align: left;
-            width: 50%;
+            width: 60%;
+        }
+
+        @include mx.breakpoint(tablethorizontal) {
+            margin-top: 10rem;
+        }
+
+        @include mx.breakpoint(desktop) {
+            width: 60%;
+        }
+
+        @include mx.breakpoint(desktopxl) {
+            width: 60%;
         }
         
         &--title {
@@ -54,6 +74,10 @@
                 line-height: 2lh;
                 max-width: 85%;
                 margin-bottom: 4rem;
+            }
+
+            @include mx.breakpoint(desktop) {
+                margin-inline: 0;
             }
             
             span {
