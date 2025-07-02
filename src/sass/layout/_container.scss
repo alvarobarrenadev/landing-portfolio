@@ -1,20 +1,7 @@
 @use '@abstracts/variables' as v;
 @use '@abstracts/mixins' as mx;
 
-.container {
-    padding-inline: 1.6rem;
-    margin-inline: auto;
-    max-width: 140rem;
-    
-    @include mx.breakpoint(tablet) {
-        padding-inline: 3.2rem;
-    }
-    
-    @include mx.breakpoint(desktop) {
-        padding-inline: 16.5rem;
-    }
-}
-
+.container,
 .footerContainer {
     padding-inline: 1.6rem;
     margin-inline: auto;
