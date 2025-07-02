@@ -48,9 +48,46 @@
             margin-bottom: 5.2rem;
             text-transform: uppercase;
 
+            .wrapper__desktop {
+                position: relative;
+                overflow: hidden;
+
+                @include mx.breakpoint(desktop) {
+                    &:hover {
+                        .projects__content_project--cover { filter: brightness(20%); }
+                        .desktop {
+                            opacity: 1;
+                            pointer-events: auto;
+                        }
+                    }
+                }
+
+                .desktop {
+                    display: none;
+                    
+                    @include mx.breakpoint(desktop) {
+                        position: absolute;
+                        inset: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 6rem;
+              
+                        opacity: 0;
+                        transition: opacity .3s ease;
+                        pointer-events: none;
+                    }
+                }
+            }
+
             &--cover {
                 margin-bottom: 2rem;
                 width: 100%;
+
+                @include mx.breakpoint(desktop) {
+                    transition: filter .3s ease;
+                }
             }
 
             &--title {
@@ -68,6 +105,10 @@
             &--buttons {
                 display: flex;
                 gap: 3.2rem;
+
+                @include mx.breakpoint(desktop) {
+                    display: none;
+                }
             }
         }
     }
