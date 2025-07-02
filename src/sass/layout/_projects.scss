@@ -23,11 +23,11 @@
             letter-spacing: -1.136px;
 
             @include mx.breakpoint(tablet) {
-                font-size: 7.2rem;
+                font-size: 6rem;
             }
             
             @include mx.breakpoint(desktop) {
-                font-size: 8.8rem;
+                font-size: 5.8rem;
             }
         }
     }
@@ -53,8 +53,12 @@
                 overflow: hidden;
 
                 @include mx.breakpoint(desktop) {
+
                     &:hover {
-                        .projects__content_project--cover { filter: brightness(20%); }
+                        .projects__content_project--cover {
+                            filter: brightness(20%);
+                        }
+
                         .desktop {
                             opacity: 1;
                             pointer-events: auto;

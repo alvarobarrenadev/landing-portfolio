@@ -1,79 +1,79 @@
-// @use '@abstracts/variables' as v;
-// @use '@abstracts/mixins' as mx;
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
 
-// body {
-//     position: relative;
+.container {
+    position: relative;
     
-//     &::before {
-//         content: '';
-//         background-image: url("/img/oval-icon.svg");
-//         background-repeat: no-repeat;
-//         transform: scaleX(-1);
-//         position: absolute;
-//         width: 35%;
-//         height: 35%;
-//         top: 11rem;
-//         left: 0;
-//         opacity: 70%;
+    &::before {
+        content: '';
+        background-image: url("/img/oval-icon.svg");
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+        position: absolute;
+        width: 35%;
+        height: 35%;
+        top: 11rem;
+        left: 0;
+        opacity: 70%;
 
-//         @include mx.breakpoint(tablet) {
-//             top: 5rem;
-//             left: -7rem;
-//         }
+        @include mx.breakpoint(tablet) {
+            top: 5rem;
+            left: -7rem;
+        }
 
-//         @include mx.breakpoint(desktop) {
-//             top: 8rem;
-//             left: -10rem;
-//         }
-//     }
+        @include mx.breakpoint(desktop) {
+            top: 8rem;
+            left: -10rem;
+        }
+    }
 
-//     &::after {
-//         content: '';
-//         background-image: url("/img/circle-icon.svg");
-//         background-repeat: no-repeat;
-//         transform: scaleX(-1);
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         top: 23rem;
-//         left: 7rem;
+    &::after {
+        content: '';
+        background-image: url("/img/circle-icon.svg");
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 28rem;
+        left: 7rem;
 
-//         @include mx.breakpoint(tablet) {
-//             top: 40rem;
-//             left: -3rem;
-//         }
+        @include mx.breakpoint(tablet) {
+            top: 31rem;
+            left: 0rem;
+        }
 
-//         @include mx.breakpoint(desktop) {
-//             top: 45rem;
-//             left: -53rem;
-//         }
-//     }
-// }
+        @include mx.breakpoint(desktop) {
+            top: 34rem;
+            left: -43rem;
+        }
+    }
+}
 
-// html {
-//     position: relative;
+body {
+    position: relative;
     
-//     &::before {
-//         content: '';
-//         background-image: url("/img/oval-icon.svg");
-//         background-repeat: no-repeat;
-//         position: absolute;
-//         width: 50%;
-//         height: 100%;
-//         top: 140rem;
-//         left: 20rem;
-//         opacity: 70%;
+    &::before {
+        content: '';
+        background-image: url("/img/oval-icon.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 140rem;
+        left: 20rem;
+        opacity: 70%;
 
-//         @include mx.breakpoint(tablet) {
-//             top: 95.5rem;
-//             left: 55rem;
-//             width: 29%;
-//         }
+        @include mx.breakpoint(tablet) {
+            top: 95.5rem;
+            left: 55rem;
+            width: 29%;
+        }
 
-//         @include mx.breakpoint(desktop) {
-//             top: 95rem;
-//             left: 96rem;
-//             width: 20%;
-//         }
-//     }
-// }
+        @include mx.breakpoint(desktop) {
+            top: 95rem;
+            left: 96rem;
+            width: 20%;
+        }
+    }
+}

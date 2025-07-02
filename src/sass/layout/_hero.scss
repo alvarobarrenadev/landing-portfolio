@@ -70,14 +70,15 @@
             
             @include mx.breakpoint(tablet) {
                 margin-inline: 0;
-                font-size: 5rem;
-                line-height: 2lh;
-                max-width: 85%;
+                font-size: 5.8rem;
+                line-height: 2.5lh;
+                max-width: 83%;
                 margin-bottom: 4rem;
             }
 
-            @include mx.breakpoint(desktop) {
-                margin-inline: 0;
+            @include mx.breakpoint(desktopxl) {
+                font-size: 8.8rem;
+                line-height: 3.5lh;
             }
             
             span {
@@ -103,16 +104,17 @@
             max-width: 90%;
             color: v.$light-gray;
             margin-bottom: 2.4rem;
+            font-size: 1.8rem;
 
             @include mx.breakpoint(tablet) {
                 margin-inline: 0;
                 max-width: 100%;
                 margin-bottom: 4rem;
             }
-        }
 
-        &--btn {
-            // margin-bottom: 9.2rem;
+            @include mx.breakpoint(desktop) {
+                max-width: 80%;
+            }
         }
     }
 }
