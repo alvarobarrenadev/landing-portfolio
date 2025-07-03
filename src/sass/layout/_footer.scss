@@ -1,0 +1,124 @@
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
+
+footer {
+    background-color: v.$dark-gray;
+    text-align: center;
+    padding-block: 6rem;
+    
+    @include mx.breakpoint(desktop) {
+        padding-block: 8.4rem;
+    }
+
+}
+
+.footer {
+    
+    &__contact {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &--title {
+            font-size: 4rem;
+            letter-spacing: -1.136px;
+            margin-bottom: 2rem;
+        }
+
+        &--description {
+            font-weight: 500;
+            color: v.$light-gray;
+            max-width: 34ch;
+
+            @include mx.breakpoint(tablet) {
+                max-width: 39ch;
+            }
+        }
+    }
+
+    &__form {
+        
+        &--group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3.2rem;
+            position: relative;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 0 0 1.2rem;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid v.$white;
+                color: v.$white;
+                font: inherit;
+                letter-spacing: -0.222px;
+                resize: none; // el textarea no se redimensiona
+                text-indent: 2.4rem;
+                
+                &::placeholder {
+                    color: v.$light-gray;
+                    text-transform: uppercase;
+                    opacity: .7;
+                }
+    
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid v.$light-gray;
+                }
+            }
+
+            .error-icon {
+                display: none;
+                position: absolute;
+                right: 0;
+                right: .5rem;
+                top: 0;
+                bottom: 0;
+                margin: 0 auto;
+                pointer-events: none;
+            }
+        
+            .error-message {
+                display: none;
+                color: v.$red;
+                font-size: 1.2rem;
+                text-align: right;
+                margin-top: 0.5rem;
+            }
+
+            &.has-success {
+                input,
+                textarea {
+                  border-bottom-color: v.$green;
+                }
+              }
+        
+            &.has-error {
+                input,
+                textarea {
+                    border-bottom-color: v.$red !important;
+                }
+                .error-icon,
+                .error-message {
+                    display: block;
+                }
+            }
+        
+            input.error {
+                border-bottom-color: v.$red !important;
+            }
+        }
+
+        &--button {
+            text-align: right;
+
+            .btn {
+                background: transparent;
+                border: none;
+            }
+        }
+    }
+}
