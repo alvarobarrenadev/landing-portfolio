@@ -32,8 +32,8 @@
     <meta name="twitter:title" content="Adam Keyes | Front-end & Full-stack Developer" />
     <meta name="twitter:description" content="Hi, I'm Adam Keyes. A front-end and full-stack developer with a passion for accessible, modern web experiences using HTML, CSS, JavaScript, React, and Sass." />
     <meta name="twitter:image" content="/landing-portfolio/assets/social-image-D9d-K-bJ.png" />
-    <script type="module" crossorigin src="/landing-portfolio/assets/main-DDfWFb1c.js"></script>
-    <link rel="stylesheet" crossorigin href="/landing-portfolio/assets/main-DplT-DSc.css">
+    <script type="module" crossorigin src="/landing-portfolio/assets/main-CK6np4s_.js"></script>
+    <link rel="stylesheet" crossorigin href="/landing-portfolio/assets/main-6wm7TYoS.css">
   </head>
   <body>
     <div class="container">
@@ -244,5 +244,40 @@
         </section>
       </main>
     </div>
+
+    <footer>
+      <div class="footerContainer">
+        <section class="footer">
+          <div class="footer__contact">
+            <h2 class="footer__contact--title">Contact</h2>
+            <p class="footer__contact--description">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+          </div>
+
+          <form id="footer__form" action="#" method="GET" novalidate>
+            <div class="footer__form--group">
+              <input type="text" id="name" name="name" placeholder="Name" required />
+              <img src="/landing-portfolio/img/invalid-icon.svg" alt="Error" class="error-icon" />
+              <small class="error-message">Sorry, can't be empty</small>
+            </div>
+          
+            <div class="footer__form--group">
+              <input type="email" id="email" name="email" placeholder="Email" required />
+              <img src="/landing-portfolio/img/invalid-icon.svg" alt="Error" class="error-icon" />
+              <small class="error-message">Sorry, invalid format here</small>
+            </div>
+          
+            <div class="footer__form--group">
+              <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+              <img src="/landing-portfolio/img/invalid-icon.svg" alt="Error" class="error-icon" />
+              <small class="error-message">Sorry, message too short</small>
+            </div>
+          
+            <div class="footer__form--button">
+              <button type="submit" id="send-button" class="btn">Send message</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
