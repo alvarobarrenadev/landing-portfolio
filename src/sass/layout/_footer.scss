@@ -10,6 +10,24 @@ footer {
         padding-block: 8.4rem;
     }
 
+    .header {
+        border-top: 1px solid v.$white;
+        margin-top: 8.7rem;
+        
+        @include mx.breakpoint(tablet) {
+            margin-top: 9.2rem;
+            align-items: center;
+        }
+        
+        &__img {
+            margin-top: 3.9rem !important;
+        }
+        
+        &__nav {
+            margin: 0;
+            margin-top: 2rem !important;
+        }
+    }
 }
 
 .footer {
@@ -62,7 +80,7 @@ footer {
     &__form {
 
         @include mx.breakpoint(tablet) {
-            max-width: 39ch;
+            max-width: 43ch;
             margin-inline: auto;
         }
 
@@ -157,5 +175,7 @@ footer {
         }
     }
 
-
+    &__header {
+        display: block;
+    }
 }
