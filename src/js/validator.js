@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 
-  // Conecta tus eventos igual que antes...
   [nameInput, emailInput, messageInput].forEach((input) => {
     input.addEventListener("blur", () => {
       if (input === nameInput) validateName();

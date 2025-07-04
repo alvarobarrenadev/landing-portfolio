@@ -13,17 +13,34 @@ footer {
 }
 
 .footer {
+    @include mx.breakpoint(desktop) {
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+    }
     
     &__contact {
         margin-bottom: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include mx.breakpoint(desktop) {
+            align-items: flex-start;
+        }
         
         &--title {
             font-size: 4rem;
             letter-spacing: -1.136px;
             margin-bottom: 2rem;
+
+            @include mx.breakpoint(tablet) {
+                font-size: 7.2rem;
+            }
+            
+            @include mx.breakpoint(desktop) {
+                font-size: 8.8rem;
+            }
         }
 
         &--description {
@@ -33,11 +50,28 @@ footer {
 
             @include mx.breakpoint(tablet) {
                 max-width: 39ch;
+                font-size: 1.8rem;
+            }
+            
+            @include mx.breakpoint(desktop) {
+                text-align: left;
             }
         }
     }
 
     &__form {
+
+        @include mx.breakpoint(tablet) {
+            max-width: 39ch;
+            margin-inline: auto;
+        }
+
+        @include mx.breakpoint(desktop) {
+            margin: 0;
+            max-width: 100%;
+            flex: 1;
+            margin-top: 1.5rem;
+        }
         
         &--group {
             display: flex;
@@ -99,7 +133,7 @@ footer {
             &.has-error {
                 input,
                 textarea {
-                    border-bottom-color: v.$red !important;
+                    border-bottom-color: v.$red;
                 }
                 .error-icon,
                 .error-message {
@@ -108,7 +142,7 @@ footer {
             }
         
             input.error {
-                border-bottom-color: v.$red !important;
+                border-bottom-color: v.$red;
             }
         }
 
@@ -118,7 +152,10 @@ footer {
             .btn {
                 background: transparent;
                 border: none;
+                font-weight: 600;
             }
         }
     }
+
+
 }
